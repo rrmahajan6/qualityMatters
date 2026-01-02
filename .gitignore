@@ -1,0 +1,26 @@
+.DS_Store
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+pnpm-lock.yaml
+/.idea
+.vscode
+.env
+coverage/
+dist/
+playwright-report/
+test-results/
+.cache/
+reports/
+/.nyc_output
+/.playwright
+*.local
+# Playwright
+node_modules/
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/

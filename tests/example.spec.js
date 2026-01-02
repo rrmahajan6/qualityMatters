@@ -1,6 +1,8 @@
 const {test, expect, playwright} = require('@playwright/test')
 
-test('has title', async ({ page }) => {
+// test.describe.configure({mode:'parellel'});
+// test.describe.configure({mode:'serial'});
+test('@smoke has title', async ({ page }) => {
   await page.goto('https://playwright.dev/');
 
   // Expect a title "to contain" a substring.
@@ -17,7 +19,7 @@ test('get started link', async ({ page }) => {
   await expect(page.getByRole('heading', { name: 'Installation' })).toBeVisible();
 });
 
-test.only('navigation to website', async ({ page }) => {
+test('navigation to website', async ({ page }) => {
   await page.goto('https://www.lambdatest.com/selenium-playground/');
   await page.waitForTimeout(3000);
 });

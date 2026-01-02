@@ -6,14 +6,16 @@
     "test:playwright": "playwright test tests/LoginPage.spec.js --headed",
     "test:cucumber": "cucumber-js \"features/**/*.feature\" --require \"features/support/**/*.js\" --require \"features/stepDefinitions/**/*.js\"",
     "test:cucumber:headed": "HEADLESS=false cucumber-js \"features/**/*.feature\" --require \"features/support/**/*.js\" --require \"features/stepDefinitions/**/*.js\" --parallel 1 --format html:cucumber-report.html --retry 3 --exit",
-    "test:regression": "cucumber-js \"features/**/*.feature\" --require \"features/support/**/*.js\" --require \"features/stepDefinitions/**/*.js\" --tags \"@regression\""},
+    "test:regression": "cucumber-js \"features/**/*.feature\" --require \"features/support/**/*.js\" --require \"features/stepDefinitions/**/*.js\" --tags \"@regression\""
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
     "@playwright/test": "^1.57.0",
-    "@types/node": "^25.0.3"
+    "@types/node": "^25.0.3",
+    "allure-playwright": "^3.4.3"
   },
   "dependencies": {
     "@cucumber/cucumber": "^12.4.0",
