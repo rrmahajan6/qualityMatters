@@ -23,3 +23,5 @@ node_modules/
 /blob-report/
 /playwright/.cache/
 /playwright/.auth/
+# Azure DevOps agent (local only)
+azagent/
