@@ -8,8 +8,8 @@ class HomePage{
     }
     async addToCart(){
         await this.zaracoat.click();
-        await this.adidasOriginal.click();
-        await this.iphone.click();
+        // await this.adidasOriginal.click();
+        // await this.iphone.click();
         await this.cart.click();
     }
 }
