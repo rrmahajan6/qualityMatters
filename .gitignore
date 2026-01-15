@@ -25,3 +25,5 @@ node_modules/
 /playwright/.auth/
 # Azure DevOps agent (local only)
 azagent/
+azagent/
+pat.txt
